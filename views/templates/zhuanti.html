@@ -1,0 +1,35 @@
+<div class="box">
+	<div id="zhuanti">
+		<div class="type">
+			<div class="big-title">
+				<div class="left-icon"></div>
+				<a href="#/wenzhang" class="a wen" >文章</a>
+				<span class="span"></span>
+				<a href="#/zhuanti" class="a zhuan active">专题</a>
+				<div class="right-icon"></div>
+				<div class="red"></div>
+			</div>
+		</div>
+		<div class="two">
+			<a href="#/zt/0" class="two-two active">热门</a>
+			<a href="#/zt/1" class="two-two">推荐</a>
+		</div>
+		<div class="position">
+			<div class="z-message" ng-repeat="v in lists2">
+				<div class="z-center">
+					<div class="z-left">
+						<div class="z-left-img {{v.touxiang}}"></div>
+						<div class="z-left-btn">关注</div>
+					</div>
+					<div class="z-right">
+						<div class="z-right1">{{v.f1}}</div>
+						<div class="z-right2">{{v.f2}}</div>
+						<div class="z-right3">{{v.f3}}</div>
+						<div class="z-right4">{{v.f4}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

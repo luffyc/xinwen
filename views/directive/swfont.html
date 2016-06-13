@@ -1,0 +1,12 @@
+<div class="small-title">
+	<div class="swiper-container swiper-container1">
+    <div class="swiper-wrapper">
+    	<div class="swiper-slide">
+			<a href="#/wenzhang" class="font-size">热门</a>
+		</div>
+		<div class="swiper-slide" ng-repeat="v in lists">
+			<a href="#/wz/{{$index}}" class="font-size" ng-class="{active:href==='#/wz/{{$index}}'}">{{v.name}}</a>
+		</div>
+    </div>
+    </div>
+</div>

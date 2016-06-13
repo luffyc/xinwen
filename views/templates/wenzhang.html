@@ -1,0 +1,37 @@
+<div class="box">
+	<div id="wenzhang">
+		<div class="type">
+			<div class="big-title">
+				<div class="left-icon"></div>
+				<a href="#/wenzhang" class="a wen active" >文章</a>
+				<span class="span"></span>
+				<a href="#/zhuanti" class="a zhuan">专题</a>
+				<div class="right-icon"></div>
+				<div class="red"></div>
+			</div>
+		</div>
+		<js-sw-font></js-sw-font>
+		<div class="position">
+			<js-sw-img></js-sw-img>
+			<div class="message" ng-repeat="v in lists1">
+				<div class="message-center">
+					<div class="message-left">
+						<div class="message-three">
+							<div class="three-img {{v.touxiang}}"></div>
+							<div class="three-blue"><b>{{v.name}}</b></div>
+							<div class="three-font">{{v.time}}</div>
+						</div>
+						<div class="message-three">
+							<div class="big-font"><b>{{v.neirong}}</b></div>
+						</div>
+						<div class="message-three three-font">{{v.jilu}}</div>
+					</div>
+					<div class="message-img">
+						<img src="{{v.href}}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
