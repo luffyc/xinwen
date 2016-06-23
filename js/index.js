@@ -3,15 +3,16 @@ var book = angular.module('jianshu',['ngAnimate','ngTouch','ngRoute']);
 book.controller('indexCtrl',['$scope',function($scope){
     if(localStorage.sp){
       $scope.isFirstOpen = false;
+      $scope.notFirstOpen = true;
     }else{
       $scope.isFirstOpen = true;
+      $scope.notFirstOpen = false;
     }
     $scope.enter = function(){
       localStorage.sp = true;
       $scope.isFirstOpen = false;
+      $scope.notFirstOpen = true;
     }
-    // $scope.a = '1';
-    // $scope.b = '1';
 }])
 
 book.directive('jsShanping',[function(){

@@ -17,8 +17,8 @@
 </head>
 <body ng-controller="indexCtrl">
 	<js-shanping ng-if="isFirstOpen"></js-shanping>
-	<js-title></js-title>
-	<ng-view></ng-view>
-	<js-footer></js-footer>
+	<js-title ng-if="notFirstOpen"></js-title>
+	<ng-view ng-if="notFirstOpen"></ng-view>
+	<js-footer ng-if="notFirstOpen"></js-footer>
 </body>
 </html>

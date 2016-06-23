@@ -41,7 +41,11 @@ html{
 		background-size: 100%;
 	}
 }
-
+#sp-box{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
 .swiper-container.swiper-container3{
 	position: absolute;
 	left:0;
@@ -53,6 +57,7 @@ html{
 	height:100%;
 	z-index: 999999999;
 	background: #fff;
+	overflow: hidden;
 }
 .sp-img{
 	width:100%;
@@ -660,7 +665,7 @@ html{
 	}
 }
 .ng-scope{
-	#zhuanti,#zt,#wenzhang,#wz{
+	#zhuanti,#zt{
 		transition:all .8s ease;
 	    .red{
 		    transition:all .6s ease;
@@ -670,18 +675,6 @@ html{
 }
 
 .ng-scope.ng-enter{
-	#wenzhang{
-		opacity:0;
-		.red{
-			transform:translateX(100%);
-		}
-		.small-title,#lunbo{
-			opacity: 0;
-		}
-	}
-	#wz{
-		opacity: 0;
-	}
 	#zhuanti{
 		opacity:0;
 		.red{
@@ -693,18 +686,6 @@ html{
 	}
 }
 .ng-scope.ng-enter-active{
-	#wenzhang{
-		opacity: 1;
-		.red{
-			transform:translateX(-100%);
-		}
-		.small-title,#lunbo{
-			opacity: 1;
-		}
-	}
-	#wz{
-		opacity: 1;
-	}
 	#zhuanti{
 		opacity: 1;
 		.red{
